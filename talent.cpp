@@ -15,7 +15,7 @@ class Swimming: public Talent {
 
     public:
         Swimming(std::string inName = "") : Talent(inName) {}
-        void show_talent() {
+        virtual void show_talent() override {
             std:: cout << "Swim" << std::endl;
         }
 };
@@ -24,7 +24,7 @@ class Dancing: public Talent {
 
     public:
         Dancing(std::string inName = "") : Talent(inName) {}
-        void show_talent() {
+        virtual void show_talent() override {
             std::cout << "Dancing" << std::endl;
         }
 };
@@ -33,7 +33,7 @@ class Counting: public Talent {
     
     public:
         Counting(std::string inName = "") : Talent(inName) {}
-        void show_talent() {
+        virtual void show_talent() override {
             std::cout << "Counting" << std::endl;
         }
 };
