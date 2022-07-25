@@ -9,11 +9,13 @@ struct BoundingBoxDimensions { //— простая структура, кото
 };
 
 class IShape {
-    protected:
+    
+    public:
         virtual double square() = 0; //— возвращает площадь конкретной фигуры;
         virtual BoundingBoxDimensions dimensions() = 0; //— размеры описывающего прямоугольника;
         virtual std::string type() = 0;// — название конкретного типа, например, вернуть строку Triangle для класса Triangle;
-
-        friend void printParams(IShape *shape);// — сюда можно будет передавать любые фигуры
 };
+
+
+void printParams(IShape *shape);
 
