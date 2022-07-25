@@ -10,6 +10,8 @@ int main() {
 
     for (int i = 0; i < 3; i++)
         printParams(figures[i]);
+    for (int i = 0; i < 3; i++) 
+        delete figures[i];
     return 0;
 }
 

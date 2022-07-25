@@ -8,6 +8,9 @@ class Triangle: public IShape {
         double c;
     public:
         Triangle(double inA = 3, double inB = 4, double inC = 5) : a(inA), b(inB), c(inC) {}
+        ~Triangle() {
+            std::cout << "Delete Triangle" << std::endl;
+        }
         virtual double square() override;
         virtual BoundingBoxDimensions dimensions() override;
 
